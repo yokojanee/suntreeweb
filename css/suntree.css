@@ -1,0 +1,272 @@
+/* 导航固定在上面，body要上padding,不然被档住 */
+body {
+  padding-top: 65px;
+}
+
+/*全局字体，颜色设置*/
+body {
+font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.428571429;
+color: #333333;
+background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;
+}
+
+.navbar-brand{
+float: left;
+padding: 15px 15px;
+font-size: 18px;
+line-height: 20px;
+
+}
+
+/* 导航改当前状态改绿色 */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #71BF44;
+}
+
+/*子导航鼠标经过反色*/
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+color: #fff;
+text-decoration: none;
+background-color: #71BF44;
+}
+
+/* 改网页内容宽度为960 */
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+
+
+/* 轮播下面加margin */
+.slide{
+    margin-bottom: 20px;
+}
+
+
+
+/* 把轮播两边的灰块块去掉 */
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0) 0), color-stop(rgba(0, 0, 0, 0) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0) 0), color-stop(rgba(0, 0, 0, 0) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+
+/* 首页模特版块间距修正 */
+.model{
+padding-left: 10px;
+}
+
+.model>div{
+padding-right: 5px;
+padding-bottom:10px;
+padding-left: 5px;
+}
+
+
+/* 页脚部分css开始 */
+
+.footer {
+padding-top: 20px;
+padding-bottom: 80px;
+}
+.footer a {
+color: #777;
+text-decoration: none;
+}
+
+.social {
+float: right;
+z-index: 9;
+position: relative;
+}
+
+.social ul {
+float: left;
+}
+
+.social ul li {
+float: left;
+margin-left: 10px;
+list-style: none;
+}
+
+.social ul li.taobao a {
+background-position: left top;
+}
+
+.social ul li.taobao a:hover {
+background-position: left bottom;
+}
+
+.social ul li.weibo a {
+background-position: -50px top;
+}
+
+.social ul li.weibo a:hover {
+background-position: -50px bottom;
+}
+
+.social ul li.tencent-weibo a {
+background-position: -100px top;
+}
+
+.social ul li.tencent-weibo a:hover {
+background-position: -100px bottom;
+}
+
+.social ul li.douban a {
+background-position: -150px top;
+}
+
+.social ul li.douban a:hover {
+background-position: -150px bottom;
+}
+
+.social ul li a {
+display: block;
+width: 39px;
+height: 39px;
+background-image: url(../images/social-01.png);
+background-repeat: no-repeat;
+}
+
+
+.social ul li a:hover {
+  text-decoration: none;
+-webkit-transition: all 0.5s ease-out 0s;
+-moz-transition: all 0.5s ease-out 0s;
+-ms-transition: all 0.5s ease-out 0s;
+-o-transition: all 0.5s ease-out 0s;
+}
+/* 页脚结束 */
+
+/* 案例页面侧边栏设置颜色间距等 */
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+color: #ffffff;
+background-color: #71BF44;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+color: #ffffff;
+background-color: #71BF44;
+}
+
+.nav-pills > li > a {
+position: relative;
+display: block;
+padding: 10px 15px;
+color: #333;
+background-color: #ddd;
+}
+
+.nav-stacked > li + li {
+margin-top: 15px;
+margin-left: 0;
+}
+
+/* 案例最终页面左侧大图下间距 */
+.zuizhongtu img{
+  margin-bottom: 10px;
+
+}
+
+/* 案例最终页面边栏小图设置 */
+.anilsubrow{
+  margin-right: 0;
+}
+
+.anilsub div{
+  padding-right: 0;
+  padding-bottom: 15px;
+}
+
+.anilsub > li + li {
+margin-top: 0;
+margin-left: 0;
+}
+
+.sidebartitle{
+position: relative;
+display: block;
+color: #ffffff;
+background-color: #71BF44;
+font-family: "微软雅黑", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.428571429;
+padding: 10px 15px;
+border-radius: 4px;
+margin-bottom: 20px;
+}
+
+
+/* 案例子页面上方的返回按钮 */
+.subgoback {
+margin:15px auto;
+width: 96px;
+height: 96px;
+}
+.subgoback a {
+float: left;
+width: 96px;
+height: 96px;
+background: url(../images/btn_back.gif) no-repeat left top;
+color: #363636;
+text-align: left;
+line-height: 96px;
+font-size: 14px;
+padding-left: 36px;
+text-decoration: none;
+outline: none;
+}
+
+
+.subgoback a:hover {
+background-position: left bottom;
+color: #71BF44;
+transition: none;
+-webkit-transition: none;
+-moz-transition: none;
+-ms-transition: none;
+-o-transition: none;
+}
+
+
+
+.graybacktitle{
+display: block;
+color: #333;
+background-color: #eee;
+font-size: 18px;
+line-height: 1.428571429;
+padding: 5px 5px;
+margin-bottom: 15px;
+
+}
+
+.post{
+  padding-bottom: 50px;
+}
